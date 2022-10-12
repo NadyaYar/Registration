@@ -3,6 +3,7 @@ package com.example.Registration.controller;
 import com.example.Registration.service.UserService;
 import com.example.Registration.dto.UserDto;
 import com.example.Registration.entity.User;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
+@SecurityRequirement(name = "javainuseapi")
 @AllArgsConstructor
 public class AuthController {
 
